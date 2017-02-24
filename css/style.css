@@ -1,0 +1,39 @@
+body{
+	background: #1b2838;
+}
+/*navbar*/
+#oneSec {
+	height: 100vh;
+	background: url("../image/page_bg_generated_v6b.jpg") center top no-repeat;
+	min-width: 972px;
+}
+#oneSec .nav-extended {
+	background-color: #171a21;
+	color: #acb2b8;
+}
+.nav-wrapper .container .row{
+	margin-bottom: 0;
+}
+#store li a, #community li a{
+	padding: 10px 0px 0px 10px !important;
+}
+#store .dropdown-content{
+	background-color: #253447 !important;
+}
+#nav-mobile li a{
+	padding: 45px 7px 7px 7px;
+	line-height: 16px;
+	color: #acb2b8;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+#logo {
+	padding-top: 34px;
+	margin-right: 40px;
+}
+#logo img{
+	width: 176px;
+	height: 44px;
+}
+/*END navbar*/

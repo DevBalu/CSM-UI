@@ -24,7 +24,6 @@ body{
 /*---------------------------*/
 /*ONE SECTION */
 /*---------------------------*/
-/*navbar*/
 #oneSec {
 	position: relative;
 	height: 100vh;
@@ -41,6 +40,7 @@ body{
 	height: 100%;
 	overflow: hidden;
 }
+/*navbar*/
 #oneSec .nav-extended {
 	background-color: #171a21;
 	color: #acb2b8;
@@ -55,7 +55,7 @@ body{
 	background-color: #253447 !important;
 }
 #nav-mobile li a{
-	padding: 45px 7px 7px 7px;
+	padding: 35px 7px 7px 7px;
 	line-height: 16px;
 	color: #acb2b8;
 	font-size: 16px;
@@ -63,7 +63,7 @@ body{
 }
 
 #logo {
-	padding-top: 34px;
+	padding-top: 20px;
 	margin-right: 40px;
 }
 #logo img{
@@ -72,16 +72,32 @@ body{
 }
 /*END navbar*/
 
+/*content index page*/
+#content {
+	background: url("../image/game_page_background_shadow.png") no-repeat center center;
+}
+/*END content index page*/
 /*adsence*/
 #adsence {
-	padding: 20px 20px;
+	margin: 0;
+	padding: 5px 5px;
 }
 #adsence img{
-	height: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
 	width: 100%;
+	height: 100%;
 	box-shadow: inset 0px 0px 50px 0px #ABABAB,19px 19px 21px -1px #17212E;
 }
 /*END adsence*/
+/*searchField*/
+#searchField{
+	height: 100vh;
+}
+/*END searchField*/
 /*---------------------------*/
 /*END ONE SECTION */
 /*---------------------------*/

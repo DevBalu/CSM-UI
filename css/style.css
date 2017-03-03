@@ -7,8 +7,6 @@
 	align-items: center;
 }
 .item_center {
-	width: 100%;
-	position: absolute;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -18,7 +16,24 @@
 	-ms-align-items: center;
 	align-items: center;
 }
-body{
+.hc {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	justify-content: center;
+}
+.vc {
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
+body {
 	background: #1b2838;
 }
 /*---------------------------*/
@@ -28,10 +43,13 @@ body{
 	position: relative;
 	height: 100vh;
 	min-width: 972px;
+	color: #acb2b8;
 }
 #page_bg {
 	z-index: -1;
 	height: 809px;
+	width: 100%;
+	position: absolute;
 }
 #page_bg img {
 	/*width of image will be need 1438px and height 809px*/
@@ -45,16 +63,16 @@ body{
 	background-color: #171a21;
 	color: #acb2b8;
 }
-.nav-wrapper .container .row{
+.nav-wrapper .container .row {
 	margin-bottom: 0;
 }
-#store li a, #community li a{
+#store li a, #community li a {
 	padding: 10px 0px 0px 10px !important;
 }
 #store .dropdown-content{
 	background-color: #253447 !important;
 }
-#nav-mobile li a{
+#nav-mobile li a {
 	padding: 35px 7px 7px 7px;
 	line-height: 16px;
 	color: #acb2b8;
@@ -66,7 +84,7 @@ body{
 	padding-top: 20px;
 	margin-right: 40px;
 }
-#logo img{
+#logo img {
 	width: 176px;
 	height: 44px;
 }
@@ -74,30 +92,53 @@ body{
 
 /*content index page*/
 #content {
-	background: url("../image/game_page_background_shadow.png") no-repeat center center;
 }
 /*END content index page*/
 /*adsence*/
 #adsence {
+	background: #fff;
 	margin: 0;
 	padding: 5px 5px;
+	height: 250px;
 }
-#adsence img{
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	width: 100%;
+#adsence img {
 	height: 100%;
 	box-shadow: inset 0px 0px 50px 0px #ABABAB,19px 19px 21px -1px #17212E;
 }
 /*END adsence*/
 /*searchField*/
-#searchField{
-	height: 100vh;
+#searchField {
+	background: url("../image/game_page_background_shadow.png") no-repeat center bottom;
+	min-height: 600px;
+	position: relative;
+}
+.field {
+	position: absolute;
+	bottom: 0;
+	min-height: 400px;
+	width: 700px;
+}
+.wrapfieldinput {
+	margin: 0;
+	padding: 0 5px;
+}
+.wrapfield {
+	margin: 0;
+	border: 1px solid #9e9e9e;
+}
+.wrapfield .btn{
+	padding: 0 1rem;
 }
 /*END searchField*/
+/*authorization form*/
+#auth {
+	height: 500px;
+	width: 500px;
+	background: #000;
+	position: absolute;
+	right: 20px;
+}
+/*END authorization form*/
 /*---------------------------*/
 /*END ONE SECTION */
 /*---------------------------*/

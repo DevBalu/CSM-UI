@@ -39,6 +39,9 @@
 							<div class="capt_field col l6 offset-l3">
 								<div class="row">
 									<div class="col s10 m10 l10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia doloribus ipsam aliquam explicabo, et possimus magni officiis ratione dicta illo! Recusandae, magnam. Sint cum sapiente consequatur, quae deserunt, voluptas explicabo odio! Non quae sapiente labore ipsa dolores, quaerat beatae eos totam esse, sunt dolorem sint praesentium, alias enim minima eius repudiandae deleniti animi consequuntur? Quas sequi maxime eveniet qui cumque cum explicabo voluptatum, neque corrupti ratione, laboriosam fuga, aliquam dignissimos quo eaque aperiam. Repudiandae, maiores! Ratione voluptatem cum ad soluta blanditiis. Velit facere rem, quaerat consequatur repudiandae sit. Rem id voluptatem harum dignissimos, nostrum itaque ea eaque quam sit. Rerum.</div>
+									<div class="input-field col s12">
+										<input id="verif" class="validate" style="margin: 0px; border: 1px solid #ddd;" placeholder="fill the characters from image">
+									</div>
 									<div ><button class="btn"></button></div>
 								</div>
 							</div><!-- END cap_field -->

@@ -118,7 +118,7 @@ body {
 	min-height: 400px;
 	width: 700px;
 }
-.wrapfieldinput {
+.wrapfield input {
 	margin: 0;
 	padding: 0 5px;
 }
@@ -127,18 +127,19 @@ body {
 	border: 1px solid #9e9e9e;
 }
 .wrapfield .btn{
-	padding: 0 1rem;
+	padding: 6px 0rem;
+	height: 100%;
+	width: 100%;
+	border-radius: 0px;
+}
+.wrapbtn .btn i{
+	font-size: 2rem;
+}
+.wrapfield .wrapbtn{
+	padding: 0;
+	height: 100% !important;
 }
 /*END searchField*/
-/*authorization form*/
-#auth {
-	height: 500px;
-	width: 500px;
-	background: #000;
-	position: absolute;
-	right: 20px;
-}
-/*END authorization form*/
 /*---------------------------*/
 /*END ONE SECTION */
 /*---------------------------*/

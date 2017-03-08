@@ -1,0 +1,47 @@
+/*step curent*/
+.paint_step {
+	background: rgba(224, 224, 224, 0.82);
+	color: #000;
+}
+/*------------------------------*/
+/*auth_step1*/
+#auth_step1 {
+	margin-top: 1rem;
+}
+#curent_steps {
+	margin-bottom: 1rem;
+}
+.steps {
+}
+.steps div {
+	height: 76px;
+	width: 50%;
+	border: 1px solid #26a69a;
+	border-radius: 50%;
+	font-size: 2rem;
+}
+/* END step curent*/
+#captcha {
+	width: 100%;
+}
+.text {
+	text-align: center;
+	text-transform: uppercase;
+}
+.capt_field {
+	min-height: 100px;
+	/*height: 100%;*/
+	border: 1px solid #9e9e9e;
+}
+.capt_field .row {
+	margin-bottom: 0px;
+}
+.capt_field .row div {
+	padding: 0px;
+}
+.capt_field .btn {
+	width: 100%;
+	/*height: 100%;*/
+}
+/*auth_step1*/
+/*------------------------------*/

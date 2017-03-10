@@ -1,8 +1,11 @@
+<?php session_start(); ?>
+<?php require_once("botdetect.php"); ?>
 <!DOCTYPE html>
 <html>
 	<head>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+		<link type="text/css" rel="Stylesheet" href="captcha/<?php echo CaptchaUrls::LayoutStylesheetUrl() ?>" />
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/auth_step.css">
 	</head>
@@ -38,11 +41,80 @@
 						<div class="row"><!-- cap_field -->
 							<div class="capt_field col l6 offset-l3">
 								<div class="row">
-									<div class="col s10 m10 l10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia doloribus ipsam aliquam explicabo, et possimus magni officiis ratione dicta illo! Recusandae, magnam. Sint cum sapiente consequatur, quae deserunt, voluptas explicabo odio! Non quae sapiente labore ipsa dolores, quaerat beatae eos totam esse, sunt dolorem sint praesentium, alias enim minima eius repudiandae deleniti animi consequuntur? Quas sequi maxime eveniet qui cumque cum explicabo voluptatum, neque corrupti ratione, laboriosam fuga, aliquam dignissimos quo eaque aperiam. Repudiandae, maiores! Ratione voluptatem cum ad soluta blanditiis. Velit facere rem, quaerat consequatur repudiandae sit. Rem id voluptatem harum dignissimos, nostrum itaque ea eaque quam sit. Rerum.</div>
-									<div class="input-field col s12">
-										<input id="verif" class="validate" style="margin: 0px; border: 1px solid #ddd;" placeholder="fill the characters from image">
+									<div class="col s10 m10 l10">
+<!-- ---------------------------------------------------------------- -->
+										<form method="post" action="" class="column" id="form1">
+												<label for="CaptchaCode">Retype the characters from the picture:</label>
+
+												<?php // Adding BotDetect Captcha to the page
+													$DemoCaptcha = new Captcha("DemoCaptcha");
+													$DemoCaptcha->UserInputID = "CaptchaCode";
+
+													if ($_POST && isset($_POST['ApplyCaptchaSettings'])) {
+														if (isset($_POST['Locale'])) {
+															$DemoCaptcha->Locale = $_POST['Locale'];
+														}
+														if (isset($_POST['CodeLength']) && 0 != strcmp($_POST['CodeLength'], 'default')) {
+															$DemoCaptcha->CodeLength = $_POST['CodeLength'];
+														} else {
+															$DemoCaptcha->CodeLength = null;
+														}
+														if (isset($_POST['CodeStyle'])) {
+															$DemoCaptcha->CodeStyle = $_POST['CodeStyle'];
+														}
+														if (isset($_POST['ImageStyle']) && 0 != strcmp($_POST['ImageStyle'], 'default')) {
+															$DemoCaptcha->ImageStyle = $_POST['ImageStyle'];
+														} else {
+															$DemoCaptcha->ImageStyle = null;
+														}
+														if (isset($_POST['CustomLightColor'])) {
+															$DemoCaptcha->CustomLightColor = $_POST['CustomLightColor'];
+														}
+														if (isset($_POST['CustomDarkColor'])) {
+															$DemoCaptcha->CustomDarkColor = $_POST['CustomDarkColor'];
+														}
+														if (isset($_POST['ImageFormat'])) {
+															$DemoCaptcha->ImageFormat = $_POST['ImageFormat'];
+														}
+														if (isset($_POST['ImageWidth'])) {
+															$DemoCaptcha->ImageWidth = $_POST['ImageWidth'];
+														}
+														if (isset($_POST['ImageHeight'])) {
+															$DemoCaptcha->ImageHeight = $_POST['ImageHeight'];
+														}
+														if (isset($_POST['SoundStyle']) && 0 != strcmp($_POST['SoundStyle'], 'default')) {
+															$DemoCaptcha->SoundStyle = $_POST['SoundStyle'];
+														} else {
+															$DemoCaptcha->SoundStyle = null;
+														}
+														if (isset($_POST['SoundFormat'])) {
+															$DemoCaptcha->SoundFormat = $_POST['SoundFormat'];
+														}
+													}
+
+													echo $DemoCaptcha->Html(); ?>
+
+												<div class="validationDiv">
+													<input name="CaptchaCode" type="text" id="CaptchaCode" />
+													<input type="submit" name="ValidateCaptchaButton" value="Validate" id="ValidateCaptchaButton" />
+
+													<?php // Captcha user input validation (only if the form was sumbitted)
+														if ($_POST && isset($_POST['ValidateCaptchaButton'])) {
+															$isHuman = $DemoCaptcha->Validate();
+															if (!$isHuman) {
+																// Captcha validation failed, show error message
+																echo "<span class=\"incorrect\">Incorrect code</span>";
+															} else {
+																// Captcha validation passed, perform protected action
+																echo "<span class=\"correct\">Correct code</span>";
+															}
+														}
+													?>
+												</div>
+										</form>
+<!-- ---------------------------------------------------------------- -->
 									</div>
-									<div ><button class="btn"></button></div>
+									<div ><button class="btn">NEXT</button></div>
 								</div>
 							</div><!-- END cap_field -->
 						</div>

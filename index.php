@@ -12,18 +12,13 @@
 			<?php  include("components/navbar.php") ?>
 			<!--END nav-->
 			<!-- page_bg_slideshow -->
-			<div id="page_bg" class="item_center">
-				<div id="slide_wrapper">
-					<div><img src="image/page_bg_generated_v6b.jpg"></div>
-					<div><img src="image/page_bg_generated_v6b_02.jpg"></div>
-				</div>
-			</div> 
+			<?php  include("components/page_bg.php") ?>
 			<!-- END page_bg_slideshow -->
 
 			<!-- page content -->
 			<div id="content" class="content ">
 				<!-- search field -->
-				<div id="searchField" class="hc">
+				<div id="search" class="hc">
 					<div class="introduction">
 						<h3>Check who you're trading with.</h3>
 						<h3>The best scammer detector.</h3>
@@ -37,8 +32,8 @@
 				</div>
 				<!-- END search field -->
 				<!-- adsence -->
-				<div class="row">
-					<div id="adsence" class="col l12">
+				<div>
+					<div id="adsence">
 					</div>
 				</div>
 				<!-- END adsence -->

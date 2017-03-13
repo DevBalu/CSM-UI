@@ -1,10 +1,10 @@
-<nav class="nav-extended">
+<nav class="nav-extended"> 
 	<div class="nav-wrapper">
 		<!--nav - logo for mob--><a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 		<div class="container">
 			<div class="row">
 				<!-- nav desctop -->
-				<div id="logo" class="col s5 offset-s4 l2 offset-l1"><a href="#">
+				<div id="logo" class="col s5 offset-s4 l2 offset-l1"><a href="index.php">
 					<img src="image/globalheader_logo.png">
 				</a></div>
 				<div class="col l4">
@@ -16,7 +16,7 @@
 					</ul>
 				</div>
 				<div class="auth col l3 right">
-					<a href="#">Login</a>
+					<a href="#" style="color: #26a69a;">Login</a>
 					<a href="#">|</a>
 					<a href="#">Language</a>
 				</div>

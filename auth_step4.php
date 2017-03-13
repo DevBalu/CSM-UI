@@ -12,29 +12,25 @@
 			<!--nav-->
 			<?php  include("components/navbar.php") ?>
 			<!--END nav-->
+
 			<!-- page_bg_slideshow -->
-			<div id="page_bg" class="item_center">
-				<div id="slide_wrapper">
-					<div><img src="image/page_bg_generated_v6b.jpg"></div>
-					<div><img src="image/page_bg_generated_v6b_02.jpg"></div>
-				</div>
-			</div> 
+			<?php require_once("components/page_bg.php") ?>
 			<!-- END page_bg_slideshow -->
 
 			<!-- page content -->
 			<div id="auth_step1" class="container">
-					<div id="curent_steps" class="row">
-						<div class="steps col s2 m2 l2 item_center"><div class="item_center">1</div></div>
-						<div class="steps col s2 m2 l2 offset-s1 offset-m1 offset-l1 item_center"><div class="item_center">2</div></div>
-						<div class="steps col s2 m2 l2 offset-s2 offset-m2 offset-l2 item_center"><div class="item_center">3</div></div>
-						<div class="steps col s2 m2 l2 offset-s1 offset-m1 offset-l1 item_center"><div class="item_center paint_step">4</div></div>
-					</div>
+				<div id="curent_steps">
+					<div class="steps item_center"><div class="item_center">1</div></div>
+					<div class="steps item_center"><div class="item_center">2</div></div>
+					<div class="steps item_center"><div class="item_center">3</div></div>
+					<div class="steps item_center"><div class="item_center paint_step">4</div></div>
+				</div>
 
-					<div class="text"><!-- explication -->
-						<h3>Congratulation!</h3>
-						<h3>You've registert to our site!</h3>
-						<h3>Click <a href="">here</a> to see you profile!</h3>
-					</div><!-- END explication -->
+				<div class="text vc"><!-- explication -->
+					<h3>Congratulation!
+					You've registert to our site!
+					Click <a href="">here</a> to see you profile!</h3>
+				</div><!-- END explication -->
 
 
 			<!-- END page content -->

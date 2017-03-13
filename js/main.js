@@ -1,7 +1,7 @@
 $( document ).ready(function(){
 	$(".button-collapse").sideNav();
+	$("#slide_wrapper > div:gt(0)").hide();
 })
-$("#slide_wrapper > div:gt(0)").hide();
 
 setInterval(function() {
   $('#slide_wrapper > div:first')

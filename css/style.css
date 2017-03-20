@@ -39,7 +39,7 @@ body {
 /*---------------------------*/
 /*ONE SECTION */
 /*---------------------------*/
-#oneSec {
+#mainSec {
 	position: relative;
 	height: 100vh;
 	min-width: 972px;
@@ -59,7 +59,7 @@ body {
 	overflow: hidden;
 }
 /*navbar*/
-#oneSec .nav-extended {
+#mainSec .nav-extended {
 	background-color: #171a21;
 	color: #acb2b8;
 }

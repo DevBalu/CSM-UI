@@ -7,7 +7,7 @@
 				<div id="logo" class="col s5 offset-s4 l2 offset-l1"><a href="index.php">
 					<img src="image/globalheader_logo.png">
 				</a></div>
-				<div class="col l4">
+				<div class="col l5">
 					<ul id="nav-mobile" class="hide-on-med-and-down">
 						<li><a class="dropdown-button" href="#!" data-activates="store">STORE</a></li>
 						<li><a class="dropdown-button" href="#!" data-activates="community">COMMUNITY</a></li>

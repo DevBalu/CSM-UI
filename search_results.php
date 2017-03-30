@@ -1,16 +1,12 @@
 <!DOCTYPE html>
-<html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<!-- fonts -->
-		<link type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
-		<link type="text/css" href="https://fonts.googleapis.com/css?family=Muli|Open+Sans+Condensed:300,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
-		<!-- END fonts -->
+		<?php include "components/head.php"; ?>
 		<link rel="stylesheet" type="text/css" href="css/search_result.css">
+		<!-- END custom style -->
 	</head>
+<html>
 	<body>
+	<head>
 		<!--ONE SECTION-->
 		<div id="mainSec">
 			<!--nav-->
@@ -25,13 +21,6 @@
 
 				<div id="user_compare_block" class="comparison_active"><!-- USER COMPARE BLOCK -->
 					<form id="user_comapre_form" action="">
-
-						<!-- <div class="thumbnail_wrapper">
-							<div class="remove_user item_center">X</div>
-							<div class="compare_image"><img src="image/Ostap_Bender.jpg"></div>
-							<div class="compare_user_name"><p class="item_center">Ostap Bender</p></div>
-						</div> --><!-- thumbnail_wrapper -->
-
 						<input class="btn" type="submit" value="compare">
 					</form>
 				</div><!-- END USER COMPARE BLOCK -->
@@ -142,12 +131,6 @@
 											</div>
 										</div><!-- END Number of groups -->
 
-										<div class="col s6 l6 pdr"><!-- group activity -->
-											<div class="group_activity count_data">
-												<p>Groups activity : <span class="nr_data">145</span></p>
-											</div>
-										</div><!-- END group activity -->
-
 										<div  class="col s6 l6"><!-- VAC bans -->
 											<div class="vac_bans count_data">
 												<p>VAC Bans : <span class="nr_data">15</span></p>
@@ -179,9 +162,8 @@
 			</div><!-- END search result -->
 		</div><!--END ONE SECTION-->
 
-		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-		<script type="text/javascript" src="js/compare.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
+		<!-- LIBS -->
+		<?php include"components/libs.php"; ?>
+		<!-- END LIBS -->
 	</body>
 </html>

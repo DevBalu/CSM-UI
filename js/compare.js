@@ -1,3 +1,6 @@
+$(document).ready(function(){
+
+/*function which add element in compare block*/
 $(".compare_button").click(function(){
 	us_id = $(this).data("item"),
 	item = '#' + us_id; /*get unic user id from attr data*/
@@ -24,18 +27,19 @@ $(".compare_button").click(function(){
 	$(item).find(".user_name")
 		.clone()
 		.prop({class: "compare_user_name item_center"})
-		.appendTo(".thumbnail_wrapper");
+		.appendTo(cr_div);
 
 	// push input hidden
-	$(item).find("input_hidden")
+	$(item).find(".input_hidden")
 		.clone()
-		.appendTo(".thumbnail_wrapper");
+		.appendTo(cr_div);
 
 	$(item).fadeOut(300);
 
 	remove_compare_item();
 });
 
+/*function that remove intem from compare block*/
 function remove_compare_item () {
 	$(".remove_user").click(function(){
 		rm_item_id = '#' + $(this).data("rm"); /*get unic user id from attr data*/
@@ -43,3 +47,6 @@ function remove_compare_item () {
 		$(this).parent().remove();
 	});
 }
+
+
+});

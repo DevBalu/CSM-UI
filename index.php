@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+		<?php include "components/head.php"; ?>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
@@ -11,6 +10,7 @@
 			<!--nav-->
 			<?php include("components/navbar.php") ?>
 			<!--END nav-->
+
 			<!-- page_bg_slideshow -->
 			<?php  include("components/page_bg.php") ?>
 			<!-- END page_bg_slideshow -->
@@ -38,8 +38,9 @@
 			</div><!-- END page content -->
 		</div>
 		<!--END MAIN SECTION-->
-		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
+
+		<!-- LIBS -->
+		<?php include"components/libs.php"; ?>
+		<!-- END LIBS -->
 	</body>
 </html>

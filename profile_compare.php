@@ -1,41 +1,74 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/auth_step.css">
+		<?php include "components/head.php" ?>
+		<link rel="stylesheet" type="text/css" href="css/profile_compare.css">
 	</head>
 	<body>
-		<!--ONE SECTION-->
-		<div id="oneSec">
+		<!--COMPARE PAGE-->
+		<div id="compare_page">
 			<!--nav-->
-			<?php  include("components/navbar.php") ?>
+			<?php include("components/navbar.php") ?>
 			<!--END nav-->
+
 			<!-- page_bg_slideshow -->
-			<?php require_once("components/page_bg.php") ?>
+			<?php  include("components/page_bg.php") ?>
 			<!-- END page_bg_slideshow -->
-
-			<!-- page content -->
-			<div id="auth_step1" class="container">
-				<div id="curent_steps">
-					<div class="steps item_center"><div class="item_center">1</div></div>
-					<div class="steps item_center"><div class="item_center">2</div></div>
-					<div class="steps item_center"><div class="item_center paint_step">3</div></div>
-					<div class="steps item_center"><div class="item_center">4</div></div>
-				</div>
-
-				<div class="text"><!-- explication -->
-					<h3>A message was sent to your email!
-					In few moment you-ll get a configuration link.
-					Click on it for finish registration!</h3>
-				</div><!-- END explication -->
+			<div class="btn_back">
+				<a class="btn-floating btn-large waves-effect waves-light">
+					BACK
+				</a>
 			</div>
-			<!-- END page content -->
+
+			<div id="profile_compare"><!-- profile_compare -->
+				<div class="row">
+					<div class="col l2 offset-l1">
+						<div class="field_name_sec"><!-- field_name_sec -->
+							<div class="field_name">user name</div>
+							<div class="field_name">country flag</div>
+							<div class="field_name">level</div>
+							<div class="field_name">xp</div>
+							<div class="field_name">playtime</div>
+							<div class="field_name">status</div>
+							<div class="field_name">last visit</div>
+							<div class="field_name">account created</div>
+							<div class="field_name">steam url</div>
+							<div class="field_name">certified steam user (CSU)</div>
+							<div class="field_name">game</div>
+							<div class="field_name">friends</div>
+							<div class="field_name">groups</div>
+							<div class="field_name">vac bans</div>
+							<div class="field_name">community bans</div>
+						</div><!-- field_name_sec -->
+					</div>
+
+					<div class="field_compare_sec col l2"><!-- field_compare_sec -->
+						<div class="field_compare"><img src="image/Ostap_Bender.jpg"></div>
+						<div class="field_compare">user name</div>
+						<div class="field_compare">country flag</div>
+						<div class="field_compare">level</div>
+						<div class="field_compare">xp</div>
+						<div class="field_compare">playtime</div>
+						<div class="field_compare">status</div>
+						<div class="field_compare">last visit</div>
+						<div class="field_compare">account created</div>
+						<div class="field_compare">steam url</div>
+						<div class="field_compare">certified steam user (CSU)</div>
+						<div class="field_compare">game</div>
+						<div class="field_compare">friends</div>
+						<div class="field_compare">groups</div>
+						<div class="field_compare">vac bans</div>
+						<div class="field_compare">community bans</div>
+					</div><!-- END field_compare_sec -->
+
+				</div><!-- END row -->
+			</div><!-- profile_compare -->
+
 		</div>
-		<!--END ONE SECTION-->
-		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
+		<!--COMPARE PAGE-->
+
+		<!-- LIBS -->
+		<?php include"components/libs.php"; ?>
+		<!-- END LIBS -->
 	</body>
 </html>

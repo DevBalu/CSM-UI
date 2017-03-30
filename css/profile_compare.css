@@ -1,0 +1,51 @@
+#compare_page .btn_back {
+	position: absolute;
+	top: 100px;
+	left: 50px;
+}
+#compare_page .btn_back a{
+	font-size: 15px;
+	background: #171a21;
+	height: 100px;
+	width: 100px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+#profile_compare {
+	margin-top: 20px;
+}
+#profile_compare .field_name_sec {
+	margin-top: 200px;
+	background: #fff;
+}
+
+#profile_compare .field_name_sec .field_name, #profile_compare .field_compare_sec .field_compare {
+	min-height: 40px;
+	width: 100%;
+	border: 1px solid #000;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+#profile_compare .field_compare:first-child {
+	height: 200px;
+	background: #fff;
+	overflow: hidden;
+	padding: 15px;
+}
+#profile_compare .field_compare:first-child img {
+	height: 100%;
+}

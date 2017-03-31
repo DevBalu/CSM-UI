@@ -19,7 +19,7 @@
 
 			<div id="search_result"><!-- search result -->
 
-				<div id="user_compare_block" class="comparison_active"><!-- USER COMPARE BLOCK -->
+				<div id="user_compare_block"><!-- USER COMPARE BLOCK -->
 					<form id="user_comapre_form" action="">
 						<input class="btn" type="submit" value="compare">
 					</form>
@@ -75,13 +75,13 @@
 
 										<!-- status -->
 											<div class="status">
-												<div class="col s5 l5">
-													<p>Currently 
+												<div class="col s12 l12">
+													<p class="curentli">Currently 
 														<span class="of_on">Offline</span>
 													</p>
 												</div>
 
-												<div class="col s7 l7">
+												<div class="col s12 l12">
 													<span class="last_visit">Last online 8hrs, 44mins ago</span>
 												</div>
 											</div>

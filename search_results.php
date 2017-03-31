@@ -164,6 +164,7 @@
 
 		<!-- LIBS -->
 		<?php include"components/libs.php"; ?>
+		<script type="text/javascript" src="js/search_result.js"></script>
 		<!-- END LIBS -->
 	</body>
 </html>

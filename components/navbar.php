@@ -4,7 +4,7 @@
 		<div class="container">
 			<div class="row">
 				<!-- nav desctop -->
-				<div id="logo" class="col s5 offset-s4 l2 offset-l1"><a href="index.php">
+				<div id="logo" class="col s5 offset-s3 l2 offset-l1"><a href="index.php">
 					<img src="image/globalheader_logo.png">
 				</a></div>
 				<div class="col l5">
@@ -16,9 +16,11 @@
 					</ul>
 				</div>
 				<div class="auth col l3 right">
-					<a href="#" style="color: #26a69a;">Login</a>
-					<a href="#">|</a>
-					<a href="#">Language</a>
+					<?php if (!empty($_GET['login'])): ?>
+						<form action='/' method='get'><button id="logout" class="btn" name='logout' type='submit'>Logout</button></form>
+					<?php else: ?>
+						<a href='?login'><img src='https://steamcommunity-a.akamaihd.net/public/images/signinthroughsteam/sits_01.png'></a>
+					<?php endif; ?>
 				</div>
 				<!-- dropdowns -->
 				<ul id="store" class="dropdown-content">

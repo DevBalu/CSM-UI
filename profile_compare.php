@@ -43,78 +43,86 @@
 						</div><!-- field_name_sec -->
 					</div>
 
-					<div class="field_compare_sec col s2 l2"><!-- field_compare_sec -->
-						<div class="field_compare"><img src="image/Ostap_Bender.jpg"></div>
-						<div class="field_compare">user name</div>
-						<div class="field_compare">country flag</div>
-						<div class="field_compare">level</div>
-						<div class="field_compare">xp</div>
-						<div class="field_compare">playtime</div>
-						<div class="field_compare">status</div>
-						<div class="field_compare">last visit</div>
-						<div class="field_compare">account created</div>
-						<div class="field_compare">steam url</div>
-						<div class="field_compare">certified steam user (CSU)</div>
-						<div class="field_compare">game</div>
-						<div class="field_compare">friends</div>
-						<div class="field_compare">groups</div>
-						<div class="field_compare">vac bans</div>
-						<div class="field_compare">community bans</div>
-					</div><!-- END field_compare_sec -->
-					<div class="field_compare_sec col s2 l2"><!-- field_compare_sec -->
-						<div class="field_compare"><img src="image/Ostap_Bender.jpg"></div>
-						<div class="field_compare">user name</div>
-						<div class="field_compare">country flag</div>
-						<div class="field_compare">level</div>
-						<div class="field_compare">xp</div>
-						<div class="field_compare">playtime</div>
-						<div class="field_compare">status</div>
-						<div class="field_compare">last visit</div>
-						<div class="field_compare">account created</div>
-						<div class="field_compare">steam url</div>
-						<div class="field_compare">certified steam user (CSU)</div>
-						<div class="field_compare">game</div>
-						<div class="field_compare">friends</div>
-						<div class="field_compare">groups</div>
-						<div class="field_compare">vac bans</div>
-						<div class="field_compare">community bans</div>
-					</div><!-- END field_compare_sec -->
-					<div class="field_compare_sec col s2 l2"><!-- field_compare_sec -->
-						<div class="field_compare"><img src="image/Ostap_Bender.jpg"></div>
-						<div class="field_compare">user name</div>
-						<div class="field_compare">country flag</div>
-						<div class="field_compare">level</div>
-						<div class="field_compare">xp</div>
-						<div class="field_compare">playtime</div>
-						<div class="field_compare">status</div>
-						<div class="field_compare">last visit</div>
-						<div class="field_compare">account created</div>
-						<div class="field_compare">steam url</div>
-						<div class="field_compare">certified steam user (CSU)</div>
-						<div class="field_compare">game</div>
-						<div class="field_compare">friends</div>
-						<div class="field_compare">groups</div>
-						<div class="field_compare">vac bans</div>
-						<div class="field_compare">community bans</div>
-					</div><!-- END field_compare_sec -->
-					<div class="field_compare_sec col s2 l2"><!-- field_compare_sec -->
-						<div class="field_compare"><img src="image/Ostap_Bender.jpg"></div>
-						<div class="field_compare">user name</div>
-						<div class="field_compare">country flag</div>
-						<div class="field_compare">level</div>
-						<div class="field_compare">xp</div>
-						<div class="field_compare">playtime</div>
-						<div class="field_compare">status</div>
-						<div class="field_compare">last visit</div>
-						<div class="field_compare">account created</div>
-						<div class="field_compare">steam url</div>
-						<div class="field_compare">certified steam user (CSU)</div>
-						<div class="field_compare">game</div>
-						<div class="field_compare">friends</div>
-						<div class="field_compare">groups</div>
-						<div class="field_compare">vac bans</div>
-						<div class="field_compare">community bans</div>
-					</div><!-- END field_compare_sec -->
+					<div class="col s2 l2">
+						<div class="field_compare_sec"><!-- field_compare_sec -->
+							<div class="field_compare"><img src="image/Ostap_Bender.jpg"></div>
+							<div class="field_compare">user name</div>
+							<div class="field_compare">country flag</div>
+							<div class="field_compare">level</div>
+							<div class="field_compare">xp</div>
+							<div class="field_compare">playtime</div>
+							<div class="field_compare">status</div>
+							<div class="field_compare">last visit</div>
+							<div class="field_compare">account created</div>
+							<div class="field_compare">steam url</div>
+							<div class="field_compare">certified steam user (CSU)</div>
+							<div class="field_compare">game</div>
+							<div class="field_compare">friends</div>
+							<div class="field_compare">groups</div>
+							<div class="field_compare">vac bans</div>
+							<div class="field_compare">community bans</div>
+						</div><!-- END field_compare_sec -->
+					</div>
+					<div class="col s2 l2">
+						<div class="field_compare_sec"><!-- field_compare_sec -->
+							<div class="field_compare"><img src="image/Ostap_Bender.jpg"></div>
+							<div class="field_compare">user name</div>
+							<div class="field_compare">country flag</div>
+							<div class="field_compare">level</div>
+							<div class="field_compare">xp</div>
+							<div class="field_compare">playtime</div>
+							<div class="field_compare">status</div>
+							<div class="field_compare">last visit</div>
+							<div class="field_compare">account created</div>
+							<div class="field_compare">steam url</div>
+							<div class="field_compare">certified steam user (CSU)</div>
+							<div class="field_compare">game</div>
+							<div class="field_compare">friends</div>
+							<div class="field_compare">groups</div>
+							<div class="field_compare">vac bans</div>
+							<div class="field_compare">community bans</div>
+						</div><!-- END field_compare_sec -->
+					</div>
+					<div class="col s2 l2">
+						<div class="field_compare_sec"><!-- field_compare_sec -->
+							<div class="field_compare"><img src="image/Ostap_Bender.jpg"></div>
+							<div class="field_compare">user name</div>
+							<div class="field_compare">country flag</div>
+							<div class="field_compare">level</div>
+							<div class="field_compare">xp</div>
+							<div class="field_compare">playtime</div>
+							<div class="field_compare">status</div>
+							<div class="field_compare">last visit</div>
+							<div class="field_compare">account created</div>
+							<div class="field_compare">steam url</div>
+							<div class="field_compare">certified steam user (CSU)</div>
+							<div class="field_compare">game</div>
+							<div class="field_compare">friends</div>
+							<div class="field_compare">groups</div>
+							<div class="field_compare">vac bans</div>
+							<div class="field_compare">community bans</div>
+						</div><!-- END field_compare_sec -->
+					</div>
+					<div class="col s2 l2">
+						<div class="field_compare_sec"><!-- field_compare_sec -->
+							<div class="field_compare"><img src="image/Ostap_Bender.jpg"></div>
+							<div class="field_compare">user name</div>
+							<div class="field_compare">country flag</div>
+							<div class="field_compare">level</div>
+							<div class="field_compare">xp</div>
+							<div class="field_compare">playtime</div>
+							<div class="field_compare">status</div>
+							<div class="field_compare">last visit</div>
+							<div class="field_compare">account created</div>
+							<div class="field_compare">steam url</div>
+							<div class="field_compare">certified steam user (CSU)</div>
+							<div class="field_compare">game</div>
+							<div class="field_compare">friends</div>
+							<div class="field_compare">groups</div>
+							<div class="field_compare">vac bans</div>
+							<div class="field_compare">community bans</div>
+						</div><!-- END field_compare_sec -->
+					</div>
 
 				</div><!-- END row -->
 			</div><!-- profile_compare -->

@@ -15,9 +15,9 @@
 						<li><a href="#">SUPPORT</a></li>
 					</ul>
 				</div>
-				<div class="auth col l3 right">
+				<div class="auth col l3 right item_center">
 					<?php if (!empty($_GET['login'])): ?>
-						<form action='/' method='get'><button id="logout" class="btn" name='logout' type='submit'>Logout</button></form>
+						<form action='/' method='get'><button id="logout" class="btn item_center" name='logout' type='submit'>Logout</button></form>
 					<?php else: ?>
 						<a href='?login'><img src='https://steamcommunity-a.akamaihd.net/public/images/signinthroughsteam/sits_01.png'></a>
 					<?php endif; ?>

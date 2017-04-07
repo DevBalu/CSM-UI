@@ -17,7 +17,7 @@
 				</div>
 				<div class="auth col l2 right">
 					<?php if (!empty($_GET['login'])): ?>
-						<form action='/' method='get'><button id="logout" class="btn" name='logout' type='submit'><p>Logout</p><p></p></button></form>
+						<form action='/' method='get'><button id="logout" class="btn" name='logout' type='submit'><img src='image/sits_0s1.png'></button></form>
 					<?php else: ?>
 						<a href='?login'><img src='https://steamcommunity-a.akamaihd.net/public/images/signinthroughsteam/sits_01.png'></a>
 					<?php endif; ?>

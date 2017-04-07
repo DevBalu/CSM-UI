@@ -93,6 +93,7 @@
 #search_result .item_wrap .item_content .row {
 	margin-left: 0;
 	margin-right: 0;
+	margin-bottom: 0;
 /*---------------------User image-----------------------------*/
 }
 #search_result .item_wrap .item_content .user_image img {

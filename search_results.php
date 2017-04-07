@@ -40,36 +40,38 @@
 										</div>
 
 										<div class="col s6 l6 info_right">
-											<div class="user_name"><p>Ostap Bender</p></div><!-- user name -->
+											<div class="row">
+												<div class="user_name"><p>Ostap Bender</p></div><!-- user name -->
 
-											<div class="country"><!-- country -->
-												<div class="country_flag">
-													<img src="image/ro.png">
+												<div class="country col s12 l12"><!-- country -->
+													<div class="country_flag">
+														<img src="image/ro.png">
+													</div>
+													<p class="nr_data col s12 l12">Russia</p>
+												</div><!-- END country -->
+
+												<div class="rating">
+													<!-- <div class="row"> -->
+														<div class="level count_data col s5 l5"><!-- level -->
+															<div class="vc">
+																<p>Level</p>
+																<div class="level_wrap item_center">15</div>
+															</div>
+														</div><!-- END level -->
+
+														<div class="xp_count col s6 l6"><!-- XP count -->
+															<p class="">5,960 XP</p>
+														</div><!-- END XP count -->
+													<!-- </div> -->
 												</div>
-												<p class="nr_data">Russia</p>
-											</div><!-- END country -->
 
-											<div class="rating">
-												<div class="row">
-													<div class="level count_data col s5 l5"><!-- level -->
-														<div class="vc">
-															<p>Level</p>
-															<div class="level_wrap item_center">15</div>
-														</div>
-													</div><!-- END level -->
-
-													<div class="xp_count col s6 l6"><!-- XP count -->
-														<p class="">5,960 XP</p>
-													</div><!-- END XP count -->
-												</div>
-											</div>
-
-											<div class="play_time vc"><!-- playtima -->
-												<div class="count_data">
-													<p>Playtime: <span class="hour nr_data">30.50 h</span>
-													</p>
-												</div>
-											</div><!--END  playtima -->
+												<div class="play_time vc col s12 l12"><!-- playtima -->
+													<div class="count_data ">
+														<p>Playtime: <span class="hour nr_data">30.50 h</span>
+														</p>
+													</div>
+												</div><!--END  playtima -->
+											</div><!-- END row -->
 
 										</div><!-- info_right -->
 

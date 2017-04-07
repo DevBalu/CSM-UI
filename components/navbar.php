@@ -7,7 +7,7 @@
 				<div id="logo" class="col s5 offset-s3 l2 offset-l1"><a href="index.php">
 					<img src="image/globalheader_logo.png">
 				</a></div>
-				<div class="col l5">
+				<div class="col l6">
 					<ul id="nav-mobile" class="hide-on-med-and-down">
 						<li><a class="dropdown-button" href="#!" data-activates="store">STORE</a></li>
 						<li><a class="dropdown-button" href="#!" data-activates="community">COMMUNITY</a></li>
@@ -15,9 +15,9 @@
 						<li><a href="#">SUPPORT</a></li>
 					</ul>
 				</div>
-				<div class="auth col l3 right item_center">
+				<div class="auth col l2 right">
 					<?php if (!empty($_GET['login'])): ?>
-						<form action='/' method='get'><button id="logout" class="btn item_center" name='logout' type='submit'>Logout</button></form>
+						<form action='/' method='get'><button id="logout" class="btn" name='logout' type='submit'><p>Logout</p><p></p></button></form>
 					<?php else: ?>
 						<a href='?login'><img src='https://steamcommunity-a.akamaihd.net/public/images/signinthroughsteam/sits_01.png'></a>
 					<?php endif; ?>

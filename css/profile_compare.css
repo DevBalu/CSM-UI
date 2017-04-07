@@ -1,6 +1,11 @@
 /* ---------------------------------------- */
 /* Desctop style */
 /* ---------------------------------------- */
+.bg-green {
+	background: rgba(76, 175, 80, 0.38) !important;
+	/*color: #7c704f;*/
+}
+.bgred{}
 /* button back */
 #compare_page .btn_back {
 	position: absolute;
@@ -34,7 +39,6 @@
 	background: rgba(23, 26, 33, 0.12);
 	min-height: 40px;
 	width: 100%;
-	border-bottom: 1px solid #ddd;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -53,6 +57,11 @@
 	text-transform: uppercase;
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
 }
+#profile_compare .field_name_sec .field_name{
+	color: #ddd;
+	font-weight: 700;
+	border-bottom: 1px solid #a79f8b;
+}
 /* END field_name_sec */
 
 /* field_compare_sec */
@@ -65,6 +74,10 @@
 	overflow: hidden;
 	padding: 20px;
 	border-bottom: none;
+}
+#profile_compare .field_compare_sec .field_compare{
+	border-bottom: 1px solid #ddd;
+	color: #fff;
 }
 #profile_compare .field_compare:first-child img {
 	height: 100%;

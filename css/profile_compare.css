@@ -31,10 +31,16 @@
 
 #profile_compare {
 	margin-top: 20px;
+	width: 100%;
 	font-family: 'Muli', sans-serif;
 }
 
 /* comun field_name_sec & field_compare_sec */
+#profile_compare .field_name_sec , #profile_compare .field_compare_sec {
+	min-width: 20%;
+	float: left;
+	padding: 12px;
+}
 #profile_compare .field_name_sec .field_name, #profile_compare .field_compare_sec .field_compare {
 	background: rgba(23, 26, 33, 0.12);
 	min-height: 40px;
@@ -47,6 +53,7 @@
 	justify-content: center;
 	-ms-align-items: center;
 	align-items: center;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
 }
 /* END comun field_name_sec & field_compare_sec */
 
@@ -55,7 +62,6 @@
 	margin-top: 200px;
 	border-radius: 10px;
 	text-transform: uppercase;
-	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
 }
 #profile_compare .field_name_sec .field_name{
 	color: #ddd;
@@ -67,7 +73,7 @@
 /* field_compare_sec */
 #profile_compare .field_compare_sec {
 	color: #ccc;
-	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+	/*box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);*/
 }
 #profile_compare .field_compare:first-child {
 	height: 200px;
@@ -75,11 +81,14 @@
 	padding: 20px;
 	border-bottom: none;
 }
+#profile_compare .field_compare:nth-child(11) {
+	height: 70px;
+}
 #profile_compare .field_compare_sec .field_compare{
 	border-bottom: 1px solid #ddd;
 	color: #fff;
 }
-#profile_compare .field_compare:first-child img {
+#profile_compare .field_compare img {
 	height: 100%;
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
 }

@@ -1,3 +1,4 @@
+// compare serction
 $(document).ready(function() {
 	$(".compare_button").click(function() {
 		us_id = $(this).data("item"),
@@ -65,3 +66,4 @@ function hide_show_compare_form() {
 		$('#user_compare_block').addClass('comparison_active');
 	}
 }
+// END compare serction

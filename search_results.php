@@ -30,50 +30,52 @@
 
 						<!-- ITEMS -->
 						<div id="ostap_bender"><!-- user_id -->
-							<div class="item_wrap col s6 l5 offset-s2">
+							<div class="item_wrap col s7 l5 offset-s2">
 								<div class="item_content">
 									<div class="row">
-										<div class="col s6 l6">
-											<div class="user_image item_center"><!-- user image -->
-												<img src="image/Ostap_Bender.jpg">
-											</div><!-- END user image -->
+										<div class="inf-top">
+											<div class="col s4 l4">
+												<div class="user_image item_center"><!-- user image -->
+													<img src="image/Ostap_Bender.jpg">
+												</div><!-- END user image -->
+											</div>
+
+											<div class="col s6 l6 info_right">
+												<div class="row">
+													<div class="user_name"><p>Ostap Bender</p></div><!-- user name -->
+
+													<div class="country col s12 l12"><!-- country -->
+														<div class="country_flag">
+															<img src="image/ro.png">
+														</div>
+														<p class="nr_data col s12 l12">Russia</p>
+													</div><!-- END country -->
+
+													<div class="rating">
+														<!-- <div class="row"> -->
+															<div class="level count_data col s5 l5"><!-- level -->
+																<div class="vc">
+																	<p>Level</p>
+																	<div class="level_wrap item_center">15</div>
+																</div>
+															</div><!-- END level -->
+
+															<div class="xp_count col s6 l6"><!-- XP count -->
+																<p class="">5,960 XP</p>
+															</div><!-- END XP count -->
+														<!-- </div> -->
+													</div>
+
+													<div class="play_time vc col s12 l12"><!-- playtima -->
+														<div class="count_data ">
+															<p>Playtime: <span class="hour nr_data">30.50 h</span>
+															</p>
+														</div>
+													</div><!--END  playtima -->
+												</div><!-- END row -->
+
+											</div><!-- info_right -->
 										</div>
-
-										<div class="col s6 l6 info_right">
-											<div class="row">
-												<div class="user_name"><p>Ostap Bender</p></div><!-- user name -->
-
-												<div class="country col s12 l12"><!-- country -->
-													<div class="country_flag">
-														<img src="image/ro.png">
-													</div>
-													<p class="nr_data col s12 l12">Russia</p>
-												</div><!-- END country -->
-
-												<div class="rating">
-													<!-- <div class="row"> -->
-														<div class="level count_data col s5 l5"><!-- level -->
-															<div class="vc">
-																<p>Level</p>
-																<div class="level_wrap item_center">15</div>
-															</div>
-														</div><!-- END level -->
-
-														<div class="xp_count col s6 l6"><!-- XP count -->
-															<p class="">5,960 XP</p>
-														</div><!-- END XP count -->
-													<!-- </div> -->
-												</div>
-
-												<div class="play_time vc col s12 l12"><!-- playtima -->
-													<div class="count_data ">
-														<p>Playtime: <span class="hour nr_data">30.50 h</span>
-														</p>
-													</div>
-												</div><!--END  playtima -->
-											</div><!-- END row -->
-
-										</div><!-- info_right -->
 
 										<!-- status -->
 											<div class="status">

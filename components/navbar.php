@@ -15,7 +15,7 @@
 						<li><a href="#">SUPPORT</a></li>
 					</ul>
 				</div>
-				<div class="auth col l2 right">
+				<div class="auth right">
 					<?php if (!empty($_GET['login'])): ?>
 						<form action='/' method='get'><button id="logout" class="btn" name='logout' type='submit'><img src='image/sits_0s1.png'></button></form>
 					<?php else: ?>

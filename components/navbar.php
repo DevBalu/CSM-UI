@@ -1,13 +1,13 @@
-<nav class="nav-extended"> 
+<nav class="nav-extended">  
 	<div class="nav-wrapper">
 		<!--nav - logo for mob--><a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 		<div class="container">
 			<div class="row">
 				<!-- nav desctop -->
-				<div id="logo" class="col s5 offset-s3 l2 offset-l1"><a href="index.php">
+				<a href="index.php"><div id="logo" class="col s5 offset-s3 l3">
 					<img src="image/globalheader_logo.png">
-				</a></div>
-				<div class="col l6">
+				</div></a>
+				<div class="col l5">
 					<ul id="nav-mobile" class="hide-on-med-and-down">
 						<li><a class="dropdown-button" href="#!" data-activates="store">STORE</a></li>
 						<li><a class="dropdown-button" href="#!" data-activates="community">COMMUNITY</a></li>

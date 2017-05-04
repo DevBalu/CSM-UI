@@ -49,7 +49,7 @@
 							<div class="field_compare">xp</div>
 							<div class="field_compare">playtime</div>
 							<div class="field_compare">status</div>
-							<div class="field_compare">last visit</div>
+							<div class="field_compare bg-red">last visit</div>
 							<div class="field_compare">account created</div>
 							<div class="field_compare ">steam url</div>
 							<div class="field_compare">certified steam user (CSU)</div>

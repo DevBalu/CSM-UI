@@ -221,8 +221,12 @@
 	font-size: 20px;
 	color: #a99c79 !important;
 }
-/*----------------------Compare Bitton----------------------*/
-#search_result .item_wrap .item_content .compare_button p{
+/*----------------------Compare Button----------------------*/
+#search_result .item_wrap .item_content .compare_button p:hover {
+	background: none;
+	box-shadow: 3px 6px 3px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
+#search_result .item_wrap .item_content .compare_button p {
 	background: #1b2838;
 	margin: 0 auto;
 	padding: 5px;

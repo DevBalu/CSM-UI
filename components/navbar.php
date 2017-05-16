@@ -7,9 +7,16 @@
 				<a href="index.php"><div id="logo" class="col s5 offset-s3 l3">
 					<img src="image/globalheader_logo.png">
 				</div></a>
-				<div class="col l5">
+				<div class="col l5" id="parent-nav">
 					<ul id="nav-mobile" class="hide-on-med-and-down">
-						<li><a class="dropdown-button" href="#!" data-activates="store">STORE</a></li>
+						<li>
+							<div class="f-ch"><a href="#!"><p>HOME</p></a></div>
+							<div>
+								<div class="s-ch"><a href="#!"><p>HOME</p></a></div>
+								<div class="th-ch"><a href="#!"><p> HOME</p></a></div>
+							</div>
+						</li>
+
 						<li><a class="dropdown-button" href="#!" data-activates="community">COMMUNITY</a></li>
 						<li><a href="#">ABOUT</a></li>
 						<li><a href="#">SUPPORT</a></li>
@@ -23,12 +30,6 @@
 					<?php endif; ?>
 				</div>
 				<!-- dropdowns -->
-				<ul id="store" class="dropdown-content">
-					<li><a href="#!">FEUTERED</a></li>
-					<li><a href="#!">EXPLORE</a></li>
-					<li><a href="#!">CURATORS</a></li>
-					<li><a href="#!">WISHLIST</a></li>
-				</ul>
 				<ul id="community" class="dropdown-content">
 					<li><a href="#!">HOME</a></li>
 					<li><a href="#!">DISCUSION</a></li>

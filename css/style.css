@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Marcellus+SC');
+/*rgba(8, 3, 37, 0.901961)*/
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+.active {
+	color: #b79a55 !important;
 }
 .text_center {
 	align-items: center;
@@ -40,14 +45,17 @@ body {
 /*ONE SECTION */
 /*---------------------------*/
 /*navbar*/
+
 @media screen and (max-width: 1400px){
 	.nav-wrapper .container {
 		width: 90%;
 	}
 }
+
 .nav-extended {
 	background-color: #171a21 !important;
 	color: #acb2b8;
+	font-family: 'Marcellus SC', serif;
 }
 
 /*auth*/
@@ -71,18 +79,42 @@ body {
 #store .dropdown-content{
 	background-color: #253447 !important;
 }
+/*-------------------------------------------------*/
+#nav-mobile li {
+	position: relative;
+}
+#nav-mobile li div {
+	overflow: hidden; 
+	height: 28px;
+}
+#nav-mobile li .f-ch a p {
+}
+#nav-mobile li .s-ch {
+	height: 16px;
+	border-bottom: 1px solid #fff;
+}
+#nav-mobile li .th-ch {
+	height: 14px;
+}
+#nav-mobile li .s-ch a p {
+	line-height: 2;
+	margin-left: -2px;
+}
+#nav-mobile li .th-ch a p {
+	line-height: 0;
+}
 #nav-mobile li a {
-	padding: 37px 7px;
+	/*padding: 37px 7px;*/
 	line-height: 16px;
-	color: #acb2b8;
+	/*color: #a99c79;*/
+	color: rgb(172, 178, 184);
+	font-weight: 700;
 	font-size: 16px;
 	text-transform: uppercase;
 }
+/*-------------------------------------------------*/
 #logo {
-	/*padding-top: 20px;*/
-	/*margin-right: 40px;*/
 	height: 90px;
-
 }
 #logo a {
 	height: 0;
@@ -116,6 +148,7 @@ body {
 /*search*/
 #search .introduction{
 	padding: 114px 0 0 0;
+	font-family: 'Marcellus SC', serif;
 }
 /*END search*/
 #search {
@@ -150,6 +183,7 @@ body {
 }
 .wrapfield {
 	margin: 0;
+	transform: skew(-7deg);
 }
 .wrapfield .btn{
 	height: 47px;

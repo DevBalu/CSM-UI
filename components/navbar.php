@@ -10,16 +10,44 @@
 				<div class="col l5" id="parent-nav">
 					<ul id="nav-mobile" class="hide-on-med-and-down">
 						<li>
-							<div class="f-ch"><a href="#!"><p>HOME</p></a></div>
-							<div>
-								<div class="s-ch"><a href="#!"><p>HOME</p></a></div>
-								<div class="th-ch"><a href="#!"><p> HOME</p></a></div>
-							</div>
+							<a href="#!" class="active">
+								<div class="f-ch"><p>HOME</p></div>
+								<div class="s-ch"><p> HOME</p></div>
+							</a>
 						</li>
 
-						<li><a class="dropdown-button" href="#!" data-activates="community">COMMUNITY</a></li>
-						<li><a href="#">ABOUT</a></li>
-						<li><a href="#">SUPPORT</a></li>
+						<li>
+							<a href="#">
+								<div class="f-ch">
+										<p>ABOUT</p>
+								</div>
+								<div class="s-ch">
+										<p>ABOUT</p>
+								</div>
+							</a>
+						</li>
+
+						<li>
+							<a class="dropdown-button" href="#!" data-activates="community">
+								<div class="f-ch">
+									<p>DONATE</p>
+								</div>
+								<div class="s-ch">
+									<p>DONATE</p>
+								</div>
+							</a>
+						</li>
+
+						<li>
+							<a href="#">
+								<div class="f-ch">
+										<p>SUPPORT</p>
+								</div>
+								<div class="s-ch">
+										<p>SUPPORT</p>
+								</div>
+							</a>
+						</li>
 					</ul>
 				</div>
 				<div class="auth right">

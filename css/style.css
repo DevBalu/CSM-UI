@@ -80,37 +80,47 @@ body {
 	background-color: #253447 !important;
 }
 /*-------------------------------------------------*/
+#nav-mobile a {
+	/*color: #a99c79;*/
+	padding: 0;
+	color: rgb(172, 178, 184);
+}
 #nav-mobile li {
 	position: relative;
+	width: 85px;
+	padding: 30px 0px;
+	line-height: 16px;
+	font-weight: 700;
+	font-size: 14px;
+	text-transform: uppercase;
 }
 #nav-mobile li div {
-	overflow: hidden; 
+	position: relative;
+	padding: 0px 10px;
+	overflow: hidden;
 	height: 28px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
 }
-#nav-mobile li .f-ch a p {
+#nav-mobile li .f-ch {
+	height: 16px;
+}
+#nav-mobile li a .f-ch p {
+	position: absolute;
+	bottom: -8px;
+	/*line-height: 2;*/
 }
 #nav-mobile li .s-ch {
 	height: 16px;
-	border-bottom: 1px solid #fff;
 }
-#nav-mobile li .th-ch {
-	height: 14px;
-}
-#nav-mobile li .s-ch a p {
-	line-height: 2;
-	margin-left: -2px;
-}
-#nav-mobile li .th-ch a p {
-	line-height: 0;
-}
-#nav-mobile li a {
-	/*padding: 37px 7px;*/
-	line-height: 16px;
-	/*color: #a99c79;*/
-	color: rgb(172, 178, 184);
-	font-weight: 700;
-	font-size: 16px;
-	text-transform: uppercase;
+#nav-mobile li a .s-ch p {
+	position: absolute;
+	top: -8px;
+	/*line-height: 0;*/
 }
 /*-------------------------------------------------*/
 #logo {

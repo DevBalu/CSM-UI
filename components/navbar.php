@@ -11,8 +11,12 @@
 					<ul id="nav-mobile" class="hide-on-med-and-down">
 						<li>
 							<a href="#!" class="active">
-								<div class="f-ch"><p>HOME</p></div>
-								<div class="s-ch"><p> HOME</p></div>
+								<div class="f-ch">
+									<p>HOME</p>
+								</div>
+								<div class="s-ch">
+									<p> HOME</p>
+								</div>
 							</a>
 						</li>
 

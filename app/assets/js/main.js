@@ -17,7 +17,6 @@ angular.module('app')
             },
             author: 'Revox'
         }
-
         // Checks if the given state is the current state
         $scope.is = function(name) {
             return $state.is(name);

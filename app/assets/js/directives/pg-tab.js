@@ -33,7 +33,7 @@ angular.module('app')
                     }
                 });
 
-                element.click(function(e) {
+                $(element).click(function(e) {
                     e.preventDefault();
                     $(element).tab('show');
                 });

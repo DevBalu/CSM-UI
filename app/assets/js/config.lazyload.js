@@ -116,6 +116,10 @@ angular.module('app')
                         'assets/plugins/moment/moment-with-locales.min.js'
                     ]
                 }, {
+                    name: 'moment-locales',
+                    files: ['assets/plugins/moment/moment-with-locales.min.js'
+                    ]
+                }, {
                     name: 'hammer',
                     files: ['assets/plugins/hammer.min.js']
                 }, {
@@ -150,6 +154,7 @@ angular.module('app')
                     files: [
                         'assets/plugins/bootstrap-select2/select2.css',
                         'assets/plugins/angular-ui-select/select.min.css',
+                        'assets/plugins/angular-ui-select/pages-select2-old.css',
                         'assets/plugins/angular-ui-select/select.min.js'
                     ]
                 }, {
@@ -161,9 +166,12 @@ angular.module('app')
                 }, {
                     name: 'daterangepicker',
                     files: [
+                        'assets/plugins/moment/moment.min.js',
                         'assets/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css',
-                        'assets/plugins/bootstrap-daterangepicker/daterangepicker.js'
-                    ]
+                        'assets/plugins/bootstrap-daterangepicker/daterangepicker.js',
+                        'assets/plugins/angular-daterangepicker/angular-daterangepicker.min.js'
+                    ],
+                    serie: true
                 }, {
                     name: 'timepicker',
                     files: [
@@ -200,7 +208,8 @@ angular.module('app')
                         'assets/plugins/dropzone/css/dropzone.css',
                         'assets/plugins/dropzone/dropzone.min.js',
                         'assets/plugins/angular-dropzone/angular-dropzone.js'
-                    ]
+                    ],
+                    serie: true
                 }, {
                     name: 'wizard',
                     files: [
@@ -211,11 +220,12 @@ angular.module('app')
                 }, {
                     name: 'dataTables',
                     files: [
-                        'assets/plugins/jquery-datatable/media/css/jquery.dataTables.css',
+                        'assets/plugins/jquery-datatable/media/css/dataTables.bootstrap.min.css',
                         'assets/plugins/jquery-datatable/extensions/FixedColumns/css/dataTables.fixedColumns.min.css',
                         'assets/plugins/datatables-responsive/css/datatables.responsive.css',
                         'assets/plugins/jquery-datatable/media/js/jquery.dataTables.min.js',
                         'assets/plugins/jquery-datatable/extensions/TableTools/js/dataTables.tableTools.min.js',
+                        'assets/plugins/jquery-datatable/media/js/dataTables.bootstrap.js',
                         'assets/plugins/jquery-datatable/extensions/Bootstrap/jquery-datatable-bootstrap.js',
                         'assets/plugins/datatables-responsive/js/datatables.responsive.js',
                         'assets/plugins/datatables-responsive/js/lodash.min.js'
@@ -226,6 +236,30 @@ angular.module('app')
                     files: [
                         'assets/plugins/angular-google-map-loader/google-map-loader.js',
                         'assets/plugins/angular-google-map-loader/google-maps.js'
+                    ]
+                },  {
+                    name: 'interact',
+                    files: [
+                        'assets/plugins/interactjs/interact.min.js'
+                    ]
+                }, {
+                    name: 'tabcollapse',
+                    files: [
+                        'assets/plugins/bootstrap-collapse/bootstrap-tabcollapse.js'
+                    ]
+                },  {
+                    name: 'ui-grid',
+                    files: [
+                        'assets/plugins/angular-ui-grid/ui-grid.min.css',
+                        'assets/plugins/angular-ui-grid/ui-grid.min.js']
+
+                },{
+                    name: 'typehead',
+                    files: [
+                        'assets/plugins/bootstrap-typehead/typeahead.bundle.min.js',
+                        'assets/plugins/bootstrap-typehead/typeahead.jquery.min.js',
+                        'assets/plugins/bootstrap-typehead/bloodhound.min.js',
+                        'assets/plugins/angular-typehead/angular-typeahead.min.js'
                     ]
                 }
 

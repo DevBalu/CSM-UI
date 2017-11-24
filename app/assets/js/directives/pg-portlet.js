@@ -24,20 +24,6 @@ angular.module('app')
 
                 element.portlet(options);
 
-                scope.maximize = function() {
-                    element.portlet('maximize');
-                }
-                scope.refresh = function() {
-                    element.portlet({
-                        refresh: true
-                    });
-                }
-                scope.close = function() {
-                    element.portlet('close');
-                }
-                scope.collapse = function() {
-                    element.portlet('collapse');
-                }
             }
         }
     }]);

@@ -16,6 +16,29 @@ angular.module('app')
                     url: "/app",
                     templateUrl: "tpl/app.html"
                 })
+                .state('app.home', {
+                    url: "/home",
+                    templateUrl: "tpl/home.html",
+                    controller: 'HomeCtrl',
+                    resolve: {
+                        deps: ['$ocLazyLoad', function($ocLazyLoad) {
+                            return $ocLazyLoad.load([
+                                    /* 
+                                        Load any ocLazyLoad module here
+                                        ex: 'wysihtml5'
+                                        Open config.lazyload.js for available modules
+                                    */
+                                ], {
+                                    insertBefore: '#lazyload_placeholder'
+                                })
+                                .then(function() {
+                                    return $ocLazyLoad.load([
+                                        'assets/js/controllers/home.js'
+                                    ]);
+                                });
+                        }]
+                    }
+                })
                 .state('app.dashboard', {
                     url: "/dashboard",
                     templateUrl: "tpl/dashboard.html",

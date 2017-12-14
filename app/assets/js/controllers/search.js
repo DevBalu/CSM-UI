@@ -7,7 +7,7 @@ angular.module('app')
 .controller('SearchCtrl', ['$scope', '$http', function($scope, $http) {
 	$scope.pageCount = 1;
 	/*METHODS*/
-	$scope.join = function($arr){
+	$scope.joinn = function($arr){
 		var string = $arr.join("   ,   ");
 		return string;
 	}
@@ -15,11 +15,15 @@ angular.module('app')
 	$scope.pagination = function(){
 		$scope.nrButtons = $scope.search_result_count / 20;
 	}
+
+	$scope.parJson = function (json) {
+		return JSON.parse(json);
+	}
 	/*END METHODS*/
 
 
 	$scope.liveSearch = function() {
-		$http.get('http://localhost/restHeroku/web/handler.php?text=' + $scope.search.query).then(function (response) {
+		$http.get('http://localhost/CSM-B/web/handler.php?text=' + $scope.search.query).then(function (response) {
 			$scope.search_page = response.data.search_page;
 			$scope.search_result_count = response.data.search_result_count;
 			$scope.users = response.data.users;
@@ -33,9 +37,7 @@ angular.module('app')
 
 	$scope.nextPage = function (){
 		$scope.pageCount++;
-		console.log($scope.pageCount);
-		$http.get('http://localhost/restHeroku/web/handler.php?text=' + $scope.search.query + '&page=' + $scope.pageCount).then(function(response){
-			console.log(response.data.search_page);
+		$http.get('http://localhost/CSM-B/web/handler.php?text=' + $scope.search.query + '&page=' + $scope.pageCount).then(function(response){
 			$scope.search_page = response.data.search_page;
 			$scope.search_result_count = response.data.search_result_count;
 			$scope.users = response.data.users;

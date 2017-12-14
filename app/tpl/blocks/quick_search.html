@@ -87,7 +87,7 @@
 
 										<!-- BEGIN Search Result Item Thumbnail !-->
 										<div class="thumbnail-wrapper d48 circular bg-success text-white inline m-t-10">
-											<div>
+											<div ng-if="userValue.user_avatar">
 												<img width="50" height="50" src=" {{ userValue.user_avatar }} " data-src="assets/img/profiles/avatar.jpg" ui-jq="unveil" data-src-retina="assets/img/profiles/avatar2x.jpg" alt="">
 											</div>
 										</div>
@@ -95,7 +95,7 @@
 
 										<div class="p-l-10 inline p-t-5">
 												<!-- steam name -->
-												<h5 class="m-b-5"><span class="semi-bold result-name">{{ search.query }}</span> <h5>
+												<h5 class="m-b-5"><span class="semi-bold result-name">{{ userValue.user_person_info.personaName }}</span> <h5>
 												<!--END  steam name -->
 
 												<!-- user_match_info -->
@@ -103,7 +103,7 @@
 														<span>
 																<strong>Also known as: </strong>
 														</span>
-														<span>{{ join(userValue.user_match_info) }}</span>
+														<span>{{ joinn(userValue.user_match_info) }}</span>
 												</p>
 												<!-- END user_match_info  -->
 										</div>

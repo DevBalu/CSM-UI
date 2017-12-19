@@ -4,7 +4,7 @@
 
 angular.module('app')
 
-.controller('SearchCtrl', ['$scope', '$http', function($scope, $http) {
+.controller('SearchCtrl', ['$scope', '$http', '$timeout', function($scope, $http, $timeout) {
 	$scope.pageCount = 1;
 	/*METHODS*/
 	$scope.joinn = function(arr){
@@ -16,8 +16,8 @@ angular.module('app')
 		$scope.nrButtons = $scope.search_result_count / 20;
 	}
 
-	$scope.parJson = function (json) {
-		return JSON.parse(json);
+	$scope.decodeChar = function (item) {
+		return unescape( item.toString() );
 	}
 	/*END METHODS*/
 
@@ -27,17 +27,6 @@ angular.module('app')
 			$scope.search_page = response.data.search_page;
 			$scope.search_result_count = response.data.search_result_count;
 			$scope.users = response.data.users;
-
-			// $scope.rests = JSON.parse(response);
-			console.log(JSON.parse(response.data));
-
-			// var umi = function(arr_users){
-			// 	for( let item in arr_users){
-			// 		var str  = arr_users[item].toString();
-			// 		console.log( unescape(escape( str )) );
-			// 	}
-			// }
-			// $scope.user_match_info = umi( $scope.users );
 
 			// pagination
 			if ($scope.search_result_count !== 0) {

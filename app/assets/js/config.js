@@ -14,7 +14,12 @@ angular.module('app')
                 .state('app', {
                     abstract: true,
                     url: "/app",
-                    templateUrl: "tpl/app.html"
+                    templateUrl: "tpl/app.html",
+                    resolve: {
+                        deps: ['$ocLazyLoad', function($ocLazyLoad) {
+                            return $ocLazyLoad.load(['utf8']);
+                        }]
+                    }
                 })
                 .state('app.home', {
                     url: "/home",

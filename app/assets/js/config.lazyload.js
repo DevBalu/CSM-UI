@@ -261,6 +261,11 @@ angular.module('app')
                         'assets/plugins/bootstrap-typehead/bloodhound.min.js',
                         'assets/plugins/angular-typehead/angular-typeahead.min.js'
                     ]
+                },{
+                    name: 'utf8',
+                    files: [
+                        'assets/plugins/utf8/utf8.js'
+                    ]
                 }
 
             ]

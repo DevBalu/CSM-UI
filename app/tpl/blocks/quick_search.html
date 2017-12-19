@@ -67,7 +67,7 @@
 										<a class="page-link" href="#" tabindex="-1">Previous</a>
 								</li>
 
-								<li class="page-item" ng-repeat="buttons in nrButtons">
+								<li class="page-item" >
 									<a class="page-link" href="#">1</a>
 								</li>
 
@@ -88,22 +88,29 @@
 										<!-- BEGIN Search Result Item Thumbnail !-->
 										<div class="thumbnail-wrapper d48 circular bg-success text-white inline m-t-10">
 											<div ng-if="userValue.user_avatar">
-												<img width="50" height="50" src=" {{ userValue.user_avatar }} " data-src="assets/img/profiles/avatar.jpg" ui-jq="unveil" data-src-retina="assets/img/profiles/avatar2x.jpg" alt="">
+												<img style="vertical-align: top; width: 50px; height: 50px;" src=" {{ userValue.user_avatar }} " data-src="assets/img/profiles/avatar.jpg" ui-jq="unveil" data-src-retina="assets/img/profiles/avatar2x.jpg" alt="">
 											</div>
 										</div>
 										<!-- END Search Result Item Thumbnail !-->
 
 										<div class="p-l-10 inline p-t-5">
 												<!-- steam name -->
-												<h5 class="m-b-5"><span class="semi-bold result-name">{{ userValue.user_person_info.personaName }}</span> <h5>
+												<h5 class="m-b-5">
+													<span class="semi-bold result-name">{{ decodeChar(userValue.user_person_info.personaName) }}</span>
+													
+												<h5>
 												<!--END  steam name -->
 
 												<!-- user_match_info -->
+												<p class="semi-bold">
+													<span class="semi-bold result-name"><img src="{{ userValue.user_person_info.countryFlag }}" style="    vertical-align: unset;" alt=""></span>
+													{{ decodeChar(userValue.user_person_info.personaRegion) }}
+												</p>
 												<p  ng-show="userValue.user_match_info.length > 0" style="max-width: 600px;">
 														<span>
 																<strong>Also known as: </strong>
 														</span>
-														<span>{{ joinn(userValue.user_match_info) }}</span>
+														<span>{{ decodeChar(userValue.user_match_info) }}</span>
 												</p>
 												<!-- END user_match_info  -->
 										</div>

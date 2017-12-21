@@ -45,44 +45,29 @@
 
 					<!-- suggestions -->
 					<span>
-								<strong>suggestions :</strong>
-						</span>
+						<strong>suggestions :</strong>
+					</span>
 					<span id="overlay-suggestions">{{search.query}}</span>
 					<!-- END suggestions -->
 
 					<br>
 
+					<!-- pagination -->
+					<div class="btn-group" ng-show="success" style="float: right;">
+						<button type="button" class="btn btn-default">Previous
+						</button>
+						<button type="button" class="btn btn-default active">{{ pagination() }}
+						</button>
+						<button type="button" class="btn btn-default" ng-click="nextPage()">Next
+						</button>
+					</div>
+					<!-- END pagination -->
 					<div class="search-results m-t-40">
-						<!-- search_result_count -->
-						<p class="bold" ng-if="search_result_count">Search result count: {{ search_result_count }}
-							<span>results</span> 
-							<br>
-							<br>
-							<span ng-if="search_page">{{ search_page }}</span>
-						</p>
-
-						<!-- pagination -->
-						<ul class="pagination justify-content-center" ng-if="nrButtons">
-								<li class="page-item">
-										<a class="page-link" href="#" tabindex="-1">Previous</a>
-								</li>
-
-								<li class="page-item" >
-									<a class="page-link" href="#">1</a>
-								</li>
-
-								<li class="page-item">
-									<a class="page-link" href="#" ng-click="nextPage()">Next</a>
-								</li>
-						</ul>
-						<!-- END pagination -->
-
-						<!-- END search_result_count -->
 
 						<div class="row">
 							<!-- BEGIN Search Result Item !-->
-							<div class="col-md-6"  ng-repeat="(userKey, userValue) in users">
-								<div class="wrap">
+							<div class="col-md-6" ng-repeat="(userKey, userValue) in users">
+								<div class="wrap" style="margin: 5px 0px; background: #ababab26; min-height: 100px; padding: 5px 0 0 15px; border-radius: 3px;">
 									<a href="{{ userValue.user_url}}">
 
 										<!-- BEGIN Search Result Item Thumbnail !-->
@@ -94,25 +79,36 @@
 										<!-- END Search Result Item Thumbnail !-->
 
 										<div class="p-l-10 inline p-t-5">
-												<!-- steam name -->
+												<!-- Persona name -->
 												<h5 class="m-b-5">
 													<span class="semi-bold result-name">{{ decodeChar(userValue.user_person_info.personaName) }}</span>
 													
 												<h5>
-												<!--END  steam name -->
+												<!-- END Persona name -->
 
-												<!-- user_match_info -->
-												<p class="semi-bold">
-													<span class="semi-bold result-name"><img src="{{ userValue.user_person_info.countryFlag }}" style="    vertical-align: unset;" alt=""></span>
+												<!-- Region -->
+												<p class="semi-bold" ng-show="userValue.user_person_info.countryFlag" >
+													<span class="semi-bold result-name" >
+														<img src="{{ userValue.user_person_info.countryFlag }}" style="vertical-align: unset;" alt="">
+													</span>
 													{{ decodeChar(userValue.user_person_info.personaRegion) }}
 												</p>
-												<p  ng-show="userValue.user_match_info.length > 0" style="max-width: 600px;">
+
+												<!-- Custom URL -->
+												<p  ng-show="findChar( 'id', userValue.user_url) !== -1">
 														<span>
-																<strong>Also known as: </strong>
+															<strong>Custom URL: </strong>
+														</span>
+														<span>{{ userValue.user_url }}</span>
+												</p>
+
+												<!-- Also known as -->
+												<p ng-show="userValue.user_match_info.length > 0" style="max-width: 600px;">
+														<span>
+															<strong>Also known as: </strong>
 														</span>
 														<span>{{ decodeChar(userValue.user_match_info) }}</span>
 												</p>
-												<!-- END user_match_info  -->
 										</div>
 
 									</a>
